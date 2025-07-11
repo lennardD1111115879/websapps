@@ -41,19 +41,3 @@ function addTask() {
     taskInput.focus();
 }
 
-import { addTask, loadTasks } from './modules/taskManager.js';
-import { renderTasks, getInputValue, clearInput } from 'modules/ui.js';
-
-document.getElementById('addBtn').addEventListener('click', () => {
-    const task = getInputValue();
-    if (task.trim()) {
-        addTask(task);
-        renderTasks();
-        clearInput();
-    }
-});
-
-document.addEventListener('DOMContentLoaded', () => {
-    loadTasks();
-    renderTasks();
-});
