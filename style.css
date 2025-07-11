@@ -1,10 +1,7 @@
     body {
       background-color: #f8f9fa;
     }
-    .todo-item.completed .todo-text {
-      text-decoration: line-through;
-      color: gray;
-    }
-    .todo-item .btn {
-      padding: 0.25rem 0.5rem;
+
+    .container {
+      margin-top: 40px;
     }
